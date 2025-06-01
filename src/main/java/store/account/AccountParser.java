@@ -11,12 +11,12 @@ public class AccountParser {
                 .build();
     }
 
-    public static AccountOut to(Account p) {
-        return p == null ? null :
+    public static AccountOut to(Account a) {
+        return a == null ? null :
             AccountOut.builder()
-                .id(p.id())
-                .name(p.name())
-                .email(p.email())
+                .id(a.id())
+                .name(a.name())
+                .email(a.email())
                 .build();
     }
     

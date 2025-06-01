@@ -42,5 +42,5 @@ public class AccountResource implements AccountController {
             .ok()
             .body(AccountParser.to(accountService.findById(idAccount)));
     }
-
+    
 }
